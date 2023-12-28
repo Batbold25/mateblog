@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
-import { Slider } from '@/components/Slider'
-import { Allblog } from '@/components/Allblog'
-import { Trending } from '@/components/Trending'
-import { Fooder } from '@/components/Fooder'
+import { Slider } from '../components/Slider'
+import { Allblog } from '../components/Allblog'
+import { Trending } from '../components/Trending'
+import { Fooder } from '../components/Fooder'
 
 
 

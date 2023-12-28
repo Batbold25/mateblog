@@ -1,11 +1,15 @@
 import React from "react";
+import { MateIcon } from "./SvgFile/MateIcon";
+import { TwitterIcon } from "./SvgFile/TwitterIcon";
+import { InstIcon } from "./SvgFile/InstIcon";
+import { LinkedIcon } from "./SvgFile/LinkedIcon";
 
 export const Fooder = () => {
   return (
     <div className="w-full pt-16 bg-neutral-100 border-gray-200 border-t flex justify-center">
-      <div className="w-5/6">
-        <div>
-          <div className=" flex flex-col gap-6">
+      <div className="w-5/6 flex flex-col items-center gap-5">
+        <div className=" flex flex-col  lg:flex  w-full gap-5 lg:flex-row">
+          <div className="  hidden lg:flex flex-col gap-6 ">
             <div className=" flex flex-col gap-6">
               <h2 className="text-gray-900 text-lg font-semibold font-['Work Sans'] leading-7">
                 About
@@ -26,10 +30,38 @@ export const Fooder = () => {
               </p>
             </div>
           </div>
-          <div></div>
-          <div></div>
+          <div className="lg:w-4/6  flex items-center flex-col ">
+            <div className=" lg:flex flex-col gap-2 text-zinc-700 text-base font-normal font-['Work Sans'] leading-normal">
+              <p>Home</p>
+              <p>Blog</p>
+              <p>Contact</p>
+            </div>
+          </div>
+          <div className=" flex justify-center lg:flex gap-5">
+            <MateIcon />
+            <TwitterIcon />
+            <InstIcon />
+            <LinkedIcon />
+          </div>
         </div>
-        <div></div>
+
+        <div className=" lg:w-full border-t border-zinc-200 justify-between flex">
+          <div className="  lg:w-full flex gap-2 py-8">
+            <img src="./Blogo.png" alt="" />
+            <div className="mt-1">
+              <img src="./Blogss.png" alt="" />
+              <h2 className="text-zinc-700 text-base font-normal font-['Work Sans'] leading-normal">
+                © All Rights Reserved.
+              </h2>
+            </div>
+          </div>
+
+          <div className=" hidden lg:w-2/5 lg:flex items-center">
+            <p className="w-fit  px-2 border-r-2 ">Terms of Use</p>
+            <p className="w-fit px-2 border-r-2 ">Privacy Policy</p>
+            <p className="w-fit px-2">Cookie Policy</p>
+          </div>
+        </div>
       </div>
     </div>
   );

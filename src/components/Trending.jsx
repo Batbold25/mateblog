@@ -3,11 +3,60 @@ import { Zaal } from "./SvgFile/Zaal";
 
 export const Trending = () => {
   return (
-    <div className="hidden lg:w-screen h-1/4 lg:flex items-center flex-col ">
-      <div className="w-10/12 text-gray-900 text-2xl font-bold font-['Work Sans'] leading-7">
-        Trending
+    <div className="bg-white flex justify-center items-center py-25">
+      <div className="flex justify-between  w-3/4 lg:w-[1216px] flex-col">
+        <h1 className="text-2xl font-bold py-12">Trending</h1>
+        <div className="flex gap-6">
+          <div className="flex justify-center">
+            <img className="relative" src="./Rect.png" alt="" />
+            <div className="w-[230px] absolute pt-[172px]">
+              <div className="flex py-1 px-2.5 bg-[#4B6BFB] text-white rounded-md max-w-24 justify-center">
+                Technology
+              </div>
+              <h2 className="font-semibold text-lg text-white">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </h2>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img className="relative" src="./Rect.png" alt="" />
+            <div className="w-[230px] absolute pt-[172px]">
+              <div className="flex py-1 px-2.5 bg-[#4B6BFB] text-white rounded-md max-w-24 justify-center">
+                Technology
+              </div>
+              <h2 className="font-semibold text-lg text-white">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </h2>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img className="relative" src="./Rect.png" alt="" />
+            <div className="w-[230px] absolute pt-[172px]">
+              <div className="flex py-1 px-2.5 bg-[#4B6BFB] text-white rounded-md max-w-24 justify-center">
+                Technology
+              </div>
+              <h2 className="font-semibold text-lg text-white">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </h2>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img className="relative" src="./Rect.png" alt="" />
+            <div className="w-[230px] absolute pt-[172px]">
+              <div className="flex py-1 px-2.5 bg-[#4B6BFB] text-white rounded-md max-w-24 justify-center">
+                Technology
+              </div>
+              <h2 className="font-semibold text-lg text-white">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <div></div>
     </div>
   );
 };
