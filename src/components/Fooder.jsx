@@ -9,7 +9,7 @@ export const Fooder = () => {
     <div className="w-full pt-16 bg-neutral-100 border-gray-200 border-t flex justify-center">
       <div className="w-5/6 flex flex-col items-center gap-5">
         <div className=" flex flex-col  lg:flex  w-full gap-5 lg:flex-row">
-          <div className="  hidden lg:flex flex-col gap-6 ">
+          <div className="   lg:flex flex-col gap-6 ">
             <div className=" flex flex-col gap-6">
               <h2 className="text-gray-900 text-lg font-semibold font-['Work Sans'] leading-7">
                 About
