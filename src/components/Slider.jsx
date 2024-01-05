@@ -14,7 +14,6 @@ export const Slider = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {/* <img src="/Anai.png" alt="" /> */}
         <div className=" w-[598px]  flex flex-col gap-6 p-10 absolute bg-slate-50 rounded bottom-2.5 left-2.5">
           <div>
             <p className="bg-[#4B6BFB] py-1 px-2 w-fit rounded text-neutral-50 mb-4">

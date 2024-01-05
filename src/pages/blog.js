@@ -1,28 +1,33 @@
-import React, { useDebugValue, useEffect } from "react";
-import { useState } from "react";
+import React from 'react'
+import { Navbar } from '@/components/Navbar'
 import Link from "next/link";
 import { useContext } from "react";
 import { SearchContextValue } from "@/context/SearchContext";
+import { useState, useEffect } from "react";
+import { Fooder } from '@/components/Fooder';
 
-export const Allblog = () => {
-  const { searchValue, setSearchValue } = useContext(SearchContextValue);
-  // console.log("home search value", searchValue);
+const Blog = () => {
+    const { searchValue, setSearchValue } = useContext(SearchContextValue);
+    // console.log("home search value", searchValue);
+  
+    const [articles, setArticles] = useState([]);
+  
+    useEffect(() => {
+      fetch("https://dev.to/api/articles")
+        .then((response) => response.json())
+        .then((data) => setArticles(data));
+    }, []);
+  
+    const searchArticles = articles.filter((article) =>
+      article.title.toLowerCase().includes(searchValue.toLowerCase())
+    );
+  
+    console.log("iput utga", searchArticles);
 
-  const [articles, setArticles] = useState([]);
-
-  useEffect(() => {
-    fetch("https://dev.to/api/articles")
-      .then((response) => response.json())
-      .then((data) => setArticles(data));
-  }, []);
-
-  const searchArticles = articles.filter((article) =>
-    article.title.toLowerCase().includes(searchValue.toLowerCase())
-  );
-
-  console.log("iput utga", searchArticles);
 
   return (
+    <div className='flex flex-col gap-24'>
+    <Navbar/>
     <div className="lg:w-screen flex justify-center items-center flex-col gap-12">
       <div className="lg:w-10/12 font-['Work_Sans'] text-2xl font-bold leading-7">
         <h1>All Blog Post</h1>
@@ -74,5 +79,17 @@ export const Allblog = () => {
         Load More
       </button>
     </div>
-  );
-};
+
+    <Fooder/>
+    </div>
+    
+   
+    
+    
+
+    
+
+  )
+}
+
+export default Blog
