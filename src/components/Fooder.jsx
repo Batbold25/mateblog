@@ -3,6 +3,7 @@ import { MateIcon } from "./SvgFile/MateIcon";
 import { TwitterIcon } from "./SvgFile/TwitterIcon";
 import { InstIcon } from "./SvgFile/InstIcon";
 import { LinkedIcon } from "./SvgFile/LinkedIcon";
+import Link from "next/link";
 
 export const Fooder = () => {
   return (
@@ -32,9 +33,16 @@ export const Fooder = () => {
           </div>
           <div className="lg:w-4/6  flex items-center flex-col ">
             <div className=" lg:flex flex-col gap-2 text-zinc-700 text-base font-normal font-['Work Sans'] leading-normal">
-              <p>Home</p>
-              <p>Blog</p>
-              <p>Contact</p>
+              <Link href={"/"}>
+                <p>Home</p>
+              </Link>
+
+              <Link href={"/blog"}>
+                <p>Blog</p>
+              </Link>
+              <Link href={"/contact"}>
+                <p>Contact</p>
+              </Link>
             </div>
           </div>
           <div className=" flex justify-center lg:flex gap-5">
